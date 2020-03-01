@@ -1,0 +1,22 @@
+name: 'TYPO3 Extension Repository Uploader'
+description: 'This action can pack and upload an extension to the TYPO3 Extension Repository (TER)'
+author: 'Kevin Ditscheid <kevin@the-coding-owl.de>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'upload'
+  color: 'orange'
+inputs:
+  extensionkey:
+    description: 'The extension key to submit to the TER'
+    required: true
+  uploadmessage:
+    description: 'The message for the extension upload'
+    required: true
+  secret_username:
+    description: 'The username of the user who is permitted to upload the extension to TER'
+    required: true
+  secret_password:
+    description: 'The password of the user who is permitted to upload the extension to TER'
+    required: true
