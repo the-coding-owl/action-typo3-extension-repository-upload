@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/app/ter-client upload ${EXTENSION_KEY} ${GITHUB_WORKSPACE} -u ${SECRET_USERNAME} -p ${SECRET_PASSWORD} -m "${GITHUB_EVENT_HEAD_COMMIT_MESSAGE}" 
