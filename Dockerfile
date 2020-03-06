@@ -1,4 +1,4 @@
-FROM the-coding-owl/ter-client
+FROM thecodingowl/ter-client
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
