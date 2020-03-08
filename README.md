@@ -1,6 +1,6 @@
 # TYPO3 Extension Repository (TER) upload action
 
-This action is handling an upload to the TYPO3 Extension Repository.
+This action is handling an upload to the [TYPO3 Extension Repository](https://extensions.typo3.org/).
 It uses the [helhum/ter-client](https://github.com/helhum/ter-client) internally to do the upload.
 
 ## Environment Variables
