@@ -20,9 +20,11 @@ It uses the [helhum/ter-client](https://github.com/helhum/ter-client) internally
 ## Example Usage
 Use this action in your workflow like this:
 
+```yaml
 uses: the-coding-owl/action-typo3-extension-repository-upload@0.0.1
   env: 
     SECRET_USERNAME: ${{ secrets.USERNAME }}
     SECRET_PASSWORD: ${{ secrets.PASSWORD }}
     EXTENSION_KEY: 'github_actions_test'
     UPLOAD_MESSAGE: ${{ github.event.release.body }}
+```
