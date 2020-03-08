@@ -7,16 +7,3 @@ runs:
 branding:
   icon: 'upload'
   color: 'orange'
-inputs:
-  extensionkey:
-    description: 'The extension key to submit to the TER'
-    required: true
-  uploadmessage:
-    description: 'The message for the extension upload'
-    required: true
-  secret_username:
-    description: 'The username of the user who is permitted to upload the extension to TER'
-    required: true
-  secret_password:
-    description: 'The password of the user who is permitted to upload the extension to TER'
-    required: true
