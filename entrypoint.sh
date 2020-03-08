@@ -2,25 +2,25 @@
 
 set -eu
 
-[ -z $SECRET_USERNAME ]
+[ -z ${SECRET_USERNAME:-} ]
 then:
   echo "::error::No username provided! Please set SECRET_USERNAME environment variable in your workflow!" >&2
   exit 1
 fi
 
-[ -z $SECRET_PASSWORD ]
+[ -z ${SECRET_PASSWORD:-} ]
 then:
   echo "::error::No password provided! Please set SECRET_PASSWORD environment variable in your workflow!" >&2
   exit 1
 fi
 
-[ -z $EXTENSION_KEY ]
+[ -z ${EXTENSION_KEY:-} ]
 then:
   echo "::error::No extension key provided! Please set EXTENSION_KEY environment variable in your workflow!" >&2
   exit 1
 fi
 
-[ -z $UPLOAD_MESSAGE ]
+[ -z ${UPLOAD_MESSAGE:-} ]
 then:
   echo "::error::No upload message provided! Please set UPLOAD_MESSAGE environment variable in your workflow!" >&2
   exit 1
